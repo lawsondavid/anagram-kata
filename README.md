@@ -1,0 +1,4 @@
+anagram-kata
+============
+
+Anagram kata
