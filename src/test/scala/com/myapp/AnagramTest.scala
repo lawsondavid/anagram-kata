@@ -11,9 +11,13 @@ class AnagramTest extends FlatSpec with Matchers {
     val words = Anagram.createAnagrams("evil")
     assert(words.contains("live"))
     assert(words.contains("vile"))
-    //assert(words.contains("evil"))
+    assert(words.contains("evil"))
     assert(words.contains("veil"))
     assert(words.contains("levi"))
     assert(words.size === 5)
+  }
+
+  "Anagram" should "print all anagrams" in {
+    Anagram.createAllAnagrams
   }
 }
